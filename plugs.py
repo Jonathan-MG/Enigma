@@ -1,7 +1,7 @@
 from constantes import alfabeto
 class Plug:
     def __init__(self, pares):
-        self.alfabeto_direita = alfabeto
+        self.alfabeto_direito = alfabeto
         self.alfabeto_esquerda = alfabeto
         for par in pares:
             Primeira_Letra = par[0].upper()
@@ -12,11 +12,11 @@ class Plug:
             self.alfabeto_esquerda = self.alfabeto_esquerda[:Posicao_Segunda_Letra] + Primeira_Letra + self.alfabeto_esquerda[Posicao_Segunda_Letra+1:]
 
     def entrada(self, sinal):
-        letra = self.alfabeto_direita[sinal]
+        letra = self.alfabeto_direito[sinal]
         sinal = self.alfabeto_esquerda.find(letra)
         return sinal
 
     def saida(self, sinal):
         letra = self.alfabeto_esquerda[sinal]
-        sinal = self.alfabeto_direita.find(letra)
+        sinal = self.alfabeto_direito.find(letra)
         return sinal
