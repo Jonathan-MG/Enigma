@@ -1,8 +1,14 @@
 from enigma import Enigma
 
-enigma = Enigma(["ai","tj","cp","re","sm"],[1,20],[2,18],[3,15])
-mensagem = "Muito burra pra fazer medicina"
-# mensagem = "XEHLL WEIQX FYB XWCQP DYOUHPTM"
+plugs_utilizados = ["ai","tj","cp","re","sm"]
+primeiro_rotor = [1, 20]
+segundo_rotor = [2, 15]
+terceiro_rotor = [3, 10]
+
+enigma = Enigma(plugs_utilizados,primeiro_rotor,segundo_rotor,terceiro_rotor)
+
+mensagem = "Isso e so mais um teste normal"
+# mensagem = "YVUJ R JF IHLK DZ XHMNQ RBSXNP"
 criptografia = enigma.digitar(mensagem)
 print(mensagem)
 print(criptografia)

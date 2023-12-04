@@ -1,6 +1,6 @@
 from constantes import alfabeto
 class Rotor:
-    def __init__(self, id, posicao_inicial = 0):
+    def __init__(self, id, posicao_inicial):
         self.alfabeto_esquerda = alfabeto
         match id:
             case 1:
