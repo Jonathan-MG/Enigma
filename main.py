@@ -249,7 +249,7 @@ class App(customtkinter.CTk):
         terceiro_rotor[1] = int(escolha_de_posicao_rotores[2])-1
     
     def digitou(self, event):
-        print(event)
+        # print(event)
         criptografia = ""
         if event.char != "\x08":
             if event.char == "\x16" or event.char == "\r":
